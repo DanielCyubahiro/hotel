@@ -152,9 +152,10 @@ export default function SinglePageWebsite() {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="w-full h-80 relative rounded-lg overflow-hidden">
                             <Image
-                                src="https://placehold.co/600x400/a3bfb8/ffffff?text=Martin+%26+Katherine"
+                                src="/about_us_photo.jpg"
                                 alt="Owners Martin and Katherine Spadaro"
-                                fill
+                                width={800}
+                                height={400}
                                 className="object-cover rounded-lg"
                             />
                         </div>
