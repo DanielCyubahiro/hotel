@@ -96,7 +96,6 @@ export default function ContactForm() {
                             <FormLabel>Your Message</FormLabel>
                             <FormControl>
                                 <Textarea
-                                    placeholder="Tell us how we can help you..."
                                     className="min-h-[120px]"
                                     {...field}
                                 />
