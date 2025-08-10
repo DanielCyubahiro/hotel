@@ -135,7 +135,7 @@ export default function SinglePageWebsite() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                More Than Just a Room
+                About US
               </h2>
               <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-300">
                 We are an elegant guest house in a historic hotel, fostering a
@@ -164,36 +164,42 @@ export default function SinglePageWebsite() {
 
         {/* Contact Section */}
         <section id="contact" className="w-full py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
-          <div className="container mx-auto max-w-5xl px-4">
+          <div className="container mx-auto max-w-3xl px-4">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold tracking-tight">Get in Touch</h2>
               <p className="mt-3 text-lg text-muted-foreground">
                 Have a question? Reach out to us.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-16 items-start">
-              <ContactForm />
-              <div className="mt-8 md:mt-0">
-                <h3 className="text-2xl font-semibold">Our Location</h3>
-                <div className="flex items-start gap-4 mt-4">
-                  <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0"/>
-                  <div>
-                    <p className="font-semibold">Torino Rooms</p>
-                    <p className="text-muted-foreground">Principessa Clotilde, 81</p>
-                    <p className="text-muted-foreground">10144 Torino TO, Italy</p>
-                  </div>
+            <ContactForm />
+          </div>
+        </section>
+
+        {/* Location Section */}
+        <section id="location" className="w-full py-16 md:py-24 bg-white dark:bg-gray-900">
+          <div className="container mx-auto max-w-3xl px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold tracking-tight">Our Location</h2>
+            </div>
+            <div>
+              <div className="flex justify-center items-start gap-4 mb-4">
+                <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0"/>
+                <div className="text-center md:text-left">
+                  <p className="font-semibold">Torino Rooms</p>
+                  <p className="text-muted-foreground">Principessa Clotilde, 81</p>
+                  <p className="text-muted-foreground">10144 Torino TO, Italy</p>
                 </div>
-                <div className="mt-4 rounded-lg overflow-hidden border">
-                  <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.747975868123!2d7.657905876801827!3d45.08272185900134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886c10f7be8807%3A0x677b1e0a13805961!2sVia%20Principessa%20Clotilde%2C%2081%2C%2010144%20Torino%20TO%2C%20Italy!5e0!3m2!1sen!2sus!4v1722883656133!5m2!1sen!2sus"
-                      width="100%"
-                      height="350"
-                      style={{border:0}}
-                      allowFullScreen={false}
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade">
-                  </iframe>
-                </div>
+              </div>
+              <div className="mt-8 rounded-lg overflow-hidden border">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.747975868123!2d7.657905876801827!3d45.08272185900134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886c10f7be8807%3A0x677b1e0a13805961!2sVia%20Principessa%20Clotilde%2C%2081%2C%2010144%20Torino%20TO%2C%20Italy!5e0!3m2!1sen!2sus!4v1722883656133!5m2!1sen!2sus"
+                    width="100%"
+                    height="400"
+                    style={{border:0}}
+                    allowFullScreen={false}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade">
+                </iframe>
               </div>
             </div>
           </div>
