@@ -68,12 +68,10 @@ export default function RootLayout({
             )}
         >
         <div className="relative flex min-h-dvh flex-col bg-background">
+            <Toaster/>
             <Navbar/>
-            {/* The main content for each page will be rendered here */}
             <main className="flex-1">{children}</main>
             <Footer/>
-            {/* Toaster is used for showing success/error messages from the form */}
-            <Toaster/>
         </div>
         </body>
         </html>

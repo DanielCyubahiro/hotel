@@ -1,40 +1,42 @@
 "use server";
 
-import { FormSchemaType } from "@/components/ContactForm";
+import {Resend} from 'resend';
+import {FormSchemaType} from "@/components/ContactForm";
 
-// This is a Server Action. It runs securely on the server, not in the browser.
-// This means you can use sensitive information like API keys here.
+const resend = new Resend(process.env.RESEND_API_KEY);
+const emailTo = process.env.EMAIL_TO;
 
 export async function sendEmail(data: FormSchemaType) {
-    // In a real application, you would integrate an email service here.
-    // Popular choices are Resend, SendGrid, or Nodemailer.
-    //
-    // Example using Resend (you would need to install it: `npm install resend`):
-    /*
-    import { Resend } from 'resend';
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const {name, email, message} = data;
+
+    if (!emailTo) {
+        console.error("EMAIL_TO environment variable is not set.");
+        return {success: false, error: "Server configuration error."};
+    }
 
     try {
-      await resend.emails.send({
-        from: 'Your Business <onboarding@resend.dev>',
-        to: 'your-email@example.com', // Your personal email to receive notifications
-        subject: `New Inquiry from ${data.name}`,
-        reply_to: data.email,
-        html: `<p>Name: ${data.name}</p><p>Email: ${data.email}</p><p>Message: ${data.message}</p>`,
-      });
-      return { success: true };
+        const {error} = await resend.emails.send({
+            from: 'Torino Rooms Inquiry <onboarding@resend.dev>',
+            to: emailTo,
+            subject: `New Inquiry from ${name}`,
+            html: `
+        <h1>New Inquiry from your Website</h1>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+        <hr />
+        <p><strong>Message:</strong></p>
+        <p>${message.replace(/\n/g, '<br>')}</p>
+      `,
+        });
+
+        if (error) {
+            console.error("Resend error:", error);
+            return {success: false, error: "Failed to send email."};
+        }
+
+        return {success: true};
     } catch (error) {
-      console.error(error);
-      return { success: false };
+        console.error("Error sending email:", error);
+        return {success: false, error: "An unexpected error occurred."};
     }
-    */
-
-    // For now, we'll just log the data to the console to simulate success.
-    console.log("Received data:", data);
-
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    // Return a success response. In a real app, this would depend on the email service's response.
-    return { success: true };
 }

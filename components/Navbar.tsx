@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Home, Menu, X } from "lucide-react";
-import { cn } from "@/lib/utils";
+import {Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
@@ -24,7 +23,7 @@ export default function Navbar() {
         <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-14 max-w-screen-2xl items-center justify-between p-3">
                 <Link href="#home" className="flex items-center space-x-2" aria-label="Torino Rooms, Homepage">
-                    <Home className="h-6 w-6" />
+                    <div className="text-4xl">🏠</div>
                     <span className="font-bold hidden md:inline">Torino Rooms</span>
                 </Link>
 
