@@ -195,7 +195,7 @@ export default function SinglePageWebsite() {
             {/* Location Section */}
             <section id="location" className="w-full py-16 md:py-24 bg-white dark:bg-gray-900">
                 <div className="container mx-auto max-w-5xl px-4">
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-7">
                         <h2 className="text-4xl font-bold tracking-tight">Our Location</h2>
                     </div>
                     <div>
