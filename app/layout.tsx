@@ -1,12 +1,13 @@
-import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import type {Metadata, Viewport} from "next";
+import {Inter} from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
+import {cn} from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Toaster } from "@/components/ui/sonner";
+import {Toaster} from "@/components/ui/sonner";
+import React from "react";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Inter({subsets: ["latin"], variable: "--font-sans"});
 
 // SEO METADATA: This is crucial for Google search results.
 // We define a template so every page title is automatically appended with the site name.
@@ -45,12 +46,12 @@ export default function RootLayout({
             )}
         >
         <div className="relative flex min-h-dvh flex-col bg-background">
-            <Navbar />
+            <Navbar/>
             {/* The main content for each page will be rendered here */}
             <main className="flex-1">{children}</main>
-            <Footer />
+            <Footer/>
             {/* Toaster is used for showing success/error messages from the form */}
-            <Toaster />
+            <Toaster/>
         </div>
         </body>
         </html>

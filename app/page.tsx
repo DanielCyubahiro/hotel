@@ -1,9 +1,6 @@
 import {Button} from "@/components/ui/button";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
-import {
-    MapPin,
-    CheckCircle,
-} from "lucide-react";
+import {MapPin, CheckCircle} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
@@ -42,11 +39,11 @@ export default function SinglePageWebsite() {
             <section id="home" className="w-full bg-gray-100 dark:bg-gray-800 py-20 md:py-32">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-50">
-                        Comfortable Living in the center of Torino
+                        Comfortable Living in the Center of Torino
                     </h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-300">
                         Discover a unique, family-like community in a historic hotel. Private rooms with all-inclusive
-                        bills, perfect for students and academics.
+                        bills, perfect for students and young professionals.
                     </p>
                     <div className="mt-8 flex justify-center gap-4">
                         <Button asChild size="lg">
