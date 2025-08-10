@@ -2,8 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   MapPin,
-  BookOpen,
-  Heart,
   CheckCircle,
 } from "lucide-react";
 import Link from "next/link";
