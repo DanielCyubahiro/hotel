@@ -16,13 +16,13 @@ export default function Footer() {
                         </div>
                     </div>
                     <nav className="flex gap-4 mt-6 md:mt-0">
-                        <Link href="/about" className="text-sm hover:underline">
+                        <Link href="#about" className="text-sm hover:underline">
                             About
                         </Link>
-                        <Link href="/rooms" className="text-sm hover:underline">
+                        <Link href="#rooms" className="text-sm hover:underline">
                             Rooms
                         </Link>
-                        <Link href="/contact" className="text-sm hover:underline">
+                        <Link href="#contact" className="text-sm hover:underline">
                             Contact
                         </Link>
                     </nav>
