@@ -28,7 +28,7 @@ export default function Footer() {
                     </nav>
                 </div>
                 <div className="mt-8 border-t pt-6 text-center text-sm text-muted-foreground">
-                    &copy; {currentYear} Torino Rooms by Martin & Katherine Spadaro. All Rights Reserved.
+                    &copy; {currentYear} Torino Rooms by Martin & Katherine Spadaro. <br/>All Rights Reserved.
                 </div>
             </div>
         </footer>
