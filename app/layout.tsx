@@ -11,18 +11,42 @@ const inter = Inter({subsets: ["latin"], variable: "--font-sans"});
 
 export const metadata: Metadata = {
     title: {
-        template: "%s | Torino Rooms",
-        default: "Affordable Rooms for Students & Professionals in Torino",
+        template: "%s | Torino Rooms - Student & Professional Housing",
+        default: "Affordable Rooms in Torino | All-Inclusive Student & Professional Housing",
     },
     description:
-        "Discover affordable, fully-furnished rooms for students and young professionals in the heart of Torino, Italy. Convenient, comfortable, and community-focused living.",
+        "Find your perfect room in Torino! We offer safe, all-inclusive, and fully-furnished rooms for students and young professionals in a friendly, historic guest house. All bills included. Inquire today!",
     keywords: [
+        // Primary English
         "student accommodation Torino",
-        "rooms for rent Torino",
-        "young professional housing Italy",
+        "rooms for rent Turin",
+        "young professional housing Torino",
         "affordable rooms Torino",
+        "all-inclusive rooms Turin",
+        "furnished rooms Torino",
+        "student housing Italy",
+        "long term stay Torino",
+
+        // Primary Italian
         "stanze per studenti Torino",
         "affitti per giovani professionisti Torino",
+        "alloggi per studenti Torino",
+        "camere in affitto Torino",
+        "contratto transitorio studenti",
+        "affitto tutto incluso Torino",
+        "residenza per studenti Torino",
+
+        // Long-tail & Specific (English + Italian)
+        "University of Turin housing",
+        "Politecnico di Torino accommodation",
+        "Erasmus housing Torino",
+        "stanze singole con bagno privato Torino",
+        "affitto breve studenti Torino",
+        "safe neighborhood Turin",
+        "international student housing Italy",
+        "guest house Torino",
+        "Martin and Katherine Spadaro",
+        "accommodation near Turin city centre",
     ],
 };
 
