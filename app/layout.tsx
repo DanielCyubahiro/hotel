@@ -9,8 +9,6 @@ import React from "react";
 
 const inter = Inter({subsets: ["latin"], variable: "--font-sans"});
 
-// SEO METADATA: This is crucial for Google search results.
-// We define a template so every page title is automatically appended with the site name.
 export const metadata: Metadata = {
     title: {
         template: "%s | Torino Rooms",
