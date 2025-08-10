@@ -17,18 +17,18 @@ const amenities = [
 ];
 
 const galleryImages = [
-    {src: "https://placehold.co/600x400/a3bfb8/ffffff?text=Beautiful+Garden", alt: "View of the landscaped garden"},
-    {src: "https://placehold.co/600x400/e2c2d1/ffffff?text=Lounge+Area", alt: "Comfortable resident lounge area"},
-    {src: "https://placehold.co/600x400/c2d1e2/ffffff?text=Shared+Kitchen", alt: "Modern and clean shared kitchen"},
+    {src: "/room1.jpg", alt: "View of the landscaped garden"},
+    {src: "/room3.jpg", alt: "Comfortable resident lounge area"},
+    {src: "/room4.jpg", alt: "Modern and clean shared kitchen"},
     {
-        src: "https://placehold.co/600x400/f0e6a8/ffffff?text=Private+Bedroom",
+        src: "/garden1.jpg",
         alt: "A cozy and well-lit private bedroom"
     },
     {
-        src: "https://placehold.co/600x400/d1a3a3/ffffff?text=Building+Exterior",
+        src: "/front1.jpg",
         alt: "Exterior view of the historic hotel building"
     },
-    {src: "https://placehold.co/600x400/a8c8f0/ffffff?text=Dining+Area", alt: "Spacious common dining area"},
+    {src: "/room2.jpg", alt: "Spacious common dining area"},
 ];
 
 
