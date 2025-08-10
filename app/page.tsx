@@ -207,6 +207,7 @@ export default function SinglePageWebsite() {
                         </div>
                         <div className="mt-8 rounded-lg overflow-hidden border">
                             <iframe
+                                title="Location of Torino Rooms on Google Maps"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.747975868123!2d7.657905876801827!3d45.08272185900134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886c10f7be8807%3A0x677b1e0a13805961!2sVia%20Principessa%20Clotilde%2C%2081%2C%2010144%20Torino%20TO%2C%20Italy!5e0!3m2!1sen!2sus!4v1722883656133!5m2!1sen!2sus"
                                 width="100%"
                                 height="400"
