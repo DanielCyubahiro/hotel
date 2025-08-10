@@ -71,7 +71,7 @@ export default function SinglePageWebsite() {
                   </CardHeader>
                   <CardContent className="prose prose-lg dark:prose-invert">
                     <p>
-                      Beyond your room, you'll have access to fantastic common facilities including a large, modern kitchen, a comfortable lounge with a large screen TV, and a beautiful landscaped garden.
+                      Beyond your room, you&#39;ll have access to fantastic common facilities including a large, modern kitchen, a comfortable lounge with a large screen TV, and a beautiful landscaped garden.
                     </p>
                     <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                       {amenities.map((amenity, index) => (
@@ -168,7 +168,7 @@ export default function SinglePageWebsite() {
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold tracking-tight">Get in Touch</h2>
               <p className="mt-3 text-lg text-muted-foreground">
-                Have a question or want to schedule a viewing? We're here to help.
+                Have a question? Reach out to us.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-16 items-start">
