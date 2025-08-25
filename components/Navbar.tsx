@@ -22,9 +22,9 @@ export default function Navbar() {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-14 max-w-screen-2xl items-center justify-between p-3">
-                <Link href="#home" className="flex items-center space-x-2" aria-label="Torino Rooms, Homepage">
+                <Link href="#home" className="flex items-center space-x-2" aria-label="Turin CoHousing, Homepage">
                     <div className="text-4xl">🏠</div>
-                    <span className="font-bold hidden md:inline">Torino Rooms</span>
+                    <span className="font-bold hidden md:inline">Turin CoHousing</span>
                 </Link>
 
                 {/* Desktop Navigation */}

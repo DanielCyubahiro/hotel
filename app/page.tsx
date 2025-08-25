@@ -39,7 +39,7 @@ export default function SinglePageWebsite() {
             <section id="home" className="w-full bg-gray-100 dark:bg-gray-800 py-20 md:py-32">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-50">
-                        Comfortable Living in the Center of Torino
+                        Comfortable Living in the Center of Turin
                     </h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-300">
                         Discover a unique, family-like community in a historic hotel. Private rooms with all-inclusive
@@ -202,13 +202,13 @@ export default function SinglePageWebsite() {
                     <div>
                         <div className="flex flex-col justify-center items-center mb-4">
                             <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0 mb-4"/>
-                            <p className="font-semibold">Torino Rooms</p>
+                            <p className="font-semibold">Turin CoHousing</p>
                             <p className="text-muted-foreground">Principessa Clotilde, 81</p>
                             <p className="text-muted-foreground">10144 Torino, Italy</p>
                         </div>
                         <div className="mt-8 rounded-lg overflow-hidden border">
                             <iframe
-                                title="Location of Torino Rooms on Google Maps"
+                                title="Location of Turin CoHousing on Google Maps"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.747975868123!2d7.657905876801827!3d45.08272185900134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886c10f7be8807%3A0x677b1e0a13805961!2sVia%20Principessa%20Clotilde%2C%2081%2C%2010144%20Torino%20TO%2C%20Italy!5e0!3m2!1sen!2sus!4v1722883656133!5m2!1sen!2sus"
                                 width="100%"
                                 height="400"

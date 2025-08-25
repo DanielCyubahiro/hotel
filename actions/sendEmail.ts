@@ -16,7 +16,7 @@ export async function sendEmail(data: FormSchemaType) {
 
     try {
         const {error} = await resend.emails.send({
-            from: 'Torino Rooms Inquiry <onboarding@resend.dev>',
+            from: 'Room Inquiry <onboarding@resend.dev>',
             to: emailTo,
             subject: `New Inquiry from ${name}`,
             html: `

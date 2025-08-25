@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
                     <div>
-                        <p className="font-semibold">Torino Rooms</p>
+                        <p className="font-semibold">Turin CoHousing</p>
                         <div className="flex items-center justify-center md:justify-start gap-2 mt-1 text-sm text-muted-foreground">
                             <MapPin className="w-4 h-4 flex-shrink-0"/>
                             <span>Principessa Clotilde, 81, 10144 Torino TO, Italy</span>
@@ -28,7 +28,7 @@ export default function Footer() {
                     </nav>
                 </div>
                 <div className="mt-8 border-t pt-6 text-center text-sm text-muted-foreground">
-                    &copy; {currentYear} Torino Rooms by Martin & Katherine Spadaro. <br/>All Rights Reserved.
+                    &copy; {currentYear} Turin CoHousing by Martin & Katherine Spadaro. <br/>All Rights Reserved.
                 </div>
             </div>
         </footer>

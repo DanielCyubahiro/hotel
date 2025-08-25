@@ -11,11 +11,11 @@ const inter = Inter({subsets: ["latin"], variable: "--font-sans"});
 
 export const metadata: Metadata = {
     title: {
-        template: "%s | Torino Rooms - Student & Professional Housing",
-        default: "Affordable Rooms in Torino | All-Inclusive Student & Professional Housing",
+        template: "%s | Turin CoHousing - Student & Professional Housing",
+        default: "Affordable Rooms in Turin | All-Inclusive Student & Professional Housing",
     },
     description:
-        "Find your perfect room in Torino! We offer safe, all-inclusive, and fully-furnished rooms for students and young professionals in a friendly, historic guest house. All bills included. Inquire today!",
+        "Find your perfect room in Turin! We offer safe, all-inclusive, and fully-furnished rooms for students and young professionals in a friendly, historic guest house. All bills included. Inquire today!",
     keywords: [
         // Primary English
         "student accommodation Torino",
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
         "furnished rooms Torino",
         "student housing Italy",
         "long term stay Torino",
+        "co housing Torino",
 
         // Primary Italian
         "stanze per studenti Torino",
